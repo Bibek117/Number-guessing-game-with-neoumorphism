@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prata', serif;
+    background-color: #2e2e2e;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+div p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+#main-div p{
+    padding: 0 20px;
+}
+#main-div{
+    margin:auto;
+    position: relative;
+    top:100px;
+    border-radius:20px;
+    height: 450px;
+    width: 500px;
+    background-color: black;
+    border-radius: 39px;
+    background: #2e2e2e;
+    box-shadow:  14px 14px 14px #1a1a1a,
+                -14px -14px 14px #424242;
+}
+h2{
+    text-align: center;
+    padding: 30px;
+}
+input[type=text]{
+    width: 80%;
+    height: 25px;
+    border: none ;
+    background-color: transparent;
+    border-bottom: 2px solid red;
+    color:white;
+    font-size: 1rem;
+}
+#submit{
+   margin-top:10px;
+   height:30px;
+   width: 100px;
+   background-color: gray;
+}
+#submit:hover{
+    background-color: black;
+    color:white;
+}
+
+
+#form{
+    padding-left: 20px;
+}
+#display{
+    color:lightgreen;
+    padding:0 20px;
+}
