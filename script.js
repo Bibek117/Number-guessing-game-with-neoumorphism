@@ -7,18 +7,19 @@ const lastResult = document.querySelector('#lastResult');
 const lowhigh = document.querySelector('#lowhigh');
 
 //generates random number
-let randomNumber =Math.floor((Math.random()*100)+1);
+var randomNumber =Math.floor((Math.random()*100)+1);
 //console.log(randomNumber);
 let countGuess = 1;
 let resetButton;
 guessNumber.focus();
+//console.log(guessNumber.value);
 
 //this function checks the input and shows the result
 
 let checkGuess =()=>{
-    
+    console.log(randomNumber);
     let userNumber = Number(guessNumber.value);
-    if(userNumber===1){
+    if(countGuess===1){
         guesses.textContent= 'Previous value: ';
     }
     guesses.textContent +=userNumber + ' ';
@@ -60,7 +61,7 @@ let setGameover = ()=>{
     resetButton.addEventListener('click',resetGame);
 }
 
-let resetGame = ()=>{
+var resetGame = ()=>{
     countGuess = 1;
     let displayparse = document.querySelectorAll('#display p');
     let i = displayparse.length;
@@ -72,6 +73,8 @@ let resetGame = ()=>{
     guessSubmit.disabled = false;
     guessNumber.value = '';
     guessNumber.focus();
-    let randomNumber =Math.floor((Math.random()*100)+1);
+    //dont use var as randomNumber is already defined and we need to change its value 
+    randomNumber =Math.floor((Math.random()*100)+1);
+   // console.log(randomNumber);
 
 }
